@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>employeeFinder Survey</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><strong>Looney employee Survey Questions</strong></h1>
+        </div>
+    
+        <h4><strong>About You</strong></h4>
+        <hr>
+        <h5 class="font-italic">Name (required)</h5>
+        <input type="text" id="name" class="text-box" required>
+        
+        <h5 class="font-italic pt-4">Link to Photo Image (required)</h5>
+        <input type="text" id="photo" class="text-box" required>
+    
+        <hr>
+    
+        <h4><strong>Question 1</strong></h4>
+        <h5 class="font-italic">Your mind is always buzzing with unexplored ideas and plans.</h5>
+        <select class="questions" id="question1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 2</strong></h4>
+        <h5 class="font-italic">Generally speaking, you rely more on your experience than your imagination.</h5>
+        <select class="questions" id="question2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 3</strong></h4>
+        <h5 class="font-italic">You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+        <select class="questions" id="question3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 4</strong></h4>
+        <h5 class="font-italic">You rarely do something just out of sheer curiosity.</h5>
+        <select class="questions" id="question4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 5</strong></h4>
+        <h5 class="font-italic">People can rarely upset you.</h5>
+        <select class="questions" id="question5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 6</strong></h4>
+        <h5 class="font-italic">It is often difficult for you to relate to other people’s feelings.</h5>
+        <select class="questions" id="question6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 7</strong></h4>
+        <h5 class="font-italic">In a discussion, truth should be more important than people’s sensitivities.</h5>
+        <select class="questions" id="question7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 8</strong></h4>
+        <h5 class="font-italic">You rarely get carried away by fantasies and ideas.</h5>
+        <select class="questions" id="question8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 9</strong></h4>
+        <h5 class="font-italic">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+        <select class="questions" id="question9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h4 class="pt-4"><strong>Question 10</strong></h4>
+        <h5 class="font-italic">You feel more energetic after spending time with a group of people.</h5>
+        <select class="questions" id="question10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+    
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+        <hr>
+
+        <footer class="footer">
+            <div class="text-left">
+                <p><a href="/api/employees">API employees List</a> | <a href="https://github.com/NitramDivad/employeeFinder" target="_blank">GitHub Repo</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Form-->
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Best Looney Match</strong></h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+  
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+    
+            function validateQuestions() {
+                var validated = true;
+
+                $(".text-box").each(function() {
+
+                    if ($(this).val() === "")
+                        validated = false;
+                });
+    
+                if (validated) {
+                    $(".questions").each(function() {
+    
+                        if ($(this).val() === "")
+                            validated = false;
+                    });
+                }
+            
+                return validated;
+            }
+    
+            if (validateQuestions()) {
+                var employeeInputs = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                             $("#question1").val(),
+                             $("#question2").val(),
+                             $("#question3").val(),
+                             $("#question4").val(),
+                             $("#question5").val(),
+                             $("#question6").val(),
+                             $("#question7").val(),
+                             $("#question8").val(),
+                             $("#question9").val(),
+                             $("#question10").val()
+                            ]
+                };
+    
+                $.post("/api/employees", employeeInputs, function(employee) {
+
+                    if (employee.length === 1)
+                        $(".modal-title").text("Best Looney Match");
+                    else
+                        $(".modal-title").text("Best Looney Matches");
+
+                    for (var i=0; i<employee.length; i++) {
+                        var hdr = $("<h2>"),
+                        img = $("<img>");
+
+                        hdr.text(employee[i].name);
+                        img.attr("src", employee[i].photo);
+                        img.attr("alt", employee[i].name);
+                        img.attr("height", "200");
+                        img.addClass("pb-4");
+  
+                        $(".modal-body").append(hdr);
+                        $(".modal-body").append(img);
+                    };
+
+                    $("#modal-form").modal("toggle");
+                });
+            }
+            else
+                alert("All entry fields must be completed before submitting!");
+        });
+
+        $(".modal").on("hidden.bs.modal", function() {
+            $(".modal-body").html("");
+        });
+    </script>
+
+</body>
+</html>
